@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard -Botz Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- LIBRARY HEADER -->
+
+    <header class="library-header">
+
+        <div class="library-brand">
+
+            <div class="library-logo">
+                <img
+                    src="images/logo.png"
+                    alt="BOTz Digital Library Logo"
+                >
+            </div>
+
+            <div>
+
+                <h1>
+                    BoTz Digital Library
+                </h1>
+
+                <p>
+                    Knowledge • Learning • Growth
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="dashboard">
+
+
+        <h1>
+            Student Dashboard
+        </h1>
+
+
+        <p id="welcomeMessage"></p>
+
+
+        <!-- VISION -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                👁️
+            </div>
+
+            <h2>
+                Our Vision
+            </h2>
+
+            <p>
+                To create a modern and accessible learning
+                environment where every student can discover
+                knowledge, develop new ideas and grow through
+                the power of reading.
+            </p>
+
+        </div>
+
+
+        <!-- MISSION -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                🎯
+            </div>
+
+            <h2>
+                Our Mission
+            </h2>
+
+            <p>
+                To provide students with quality books,
+                digital resources and a welcoming learning
+                environment while encouraging reading,
+                research, creativity and lifelong learning.
+            </p>
+
+        </div>
+
+
+       
+
+        <!-- DASHBOARD MENU -->
+<div class="dashboard-menu">
+
+    <button onclick="viewAvailableBooks()">
+        Available Books
+    </button>
+
+    <button onclick="viewMyBooks()">
+        My Books
+    </button>
+
+    <button onclick="borrowBook()">
+        Borrow Book
+    </button>
+
+    <button onclick="returnBook()">
+        Return Book
+    </button>
+
+    <button onclick="checkDueAmount()">
+        Due Amount
+    </button>
+
+   <button onclick="viewTamilEbooks()">
+    📖 E-Books
+</button>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+
+</div>
+
+        <!-- CONTENT -->
+
+        <div id="content">
+
+            <h2>
+                Welcome to the Library
+            </h2>
+
+            <p>
+                Select an option above to continue.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 BoTz Digital Library
+        </p>
+
+        <p>
+            Empowering Students Through Knowledge
+        </p>
+
+    </footer>
+
+
+    <script src="student.js"></script>
+
+</body>
+
+</html>

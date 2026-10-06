@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Registrations</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>
+            Student Registrations
+        </h1>
+
+        <p>
+            Review new student registration requests.
+        </p>
+
+
+        <div class="approval-actions">
+
+            <button
+                type="button"
+                onclick="loadPendingStudents()"
+            >
+                🔄 Refresh
+            </button>
+
+            <button
+                type="button"
+                onclick="window.location.href='admin.html'"
+            >
+                ← Back to Admin Dashboard
+            </button>
+
+        </div>
+
+
+        <div id="approvalMessage"></div>
+
+
+        <div
+            id="pendingStudents"
+            class="approval-table-container"
+        >
+
+            <p>
+                Loading student registrations...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="student-approvals.js"></script>
+
+</body>
+
+</html>

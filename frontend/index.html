@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BoTz Digital Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         LIBRARY HEADER
+    ========================================== -->
+
+    <header class="library-header">
+
+        <div class="library-brand">
+
+            <!-- ROUND LIBRARY LOGO -->
+            <div class="library-logo">
+                <img
+                    src="images/logo.png"
+                    alt="BOTz Digital Library Logo"
+                >
+            </div>
+
+            <!-- LIBRARY NAME -->
+            <div class="brand-text">
+
+                <h1>BOTz Digital Library</h1>
+
+                <p>
+                    Knowledge • Learning • Growth
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         LARGE HEADER / HERO IMAGE
+    ========================================== -->
+
+    <section class="hero-banner">
+
+        <img
+            src="images/header.png"
+            alt="BOTz Digital Library"
+            class="hero-image"
+        >
+
+        <div class="hero-overlay">
+
+            <h2>
+                Discover the World of Knowledge
+            </h2>
+
+            <p>
+                Read, Learn, Explore and Grow
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         WELCOME SECTION
+    ========================================== -->
+
+    <section class="library-intro">
+
+        <h2>
+            Welcome to Our Library
+        </h2>
+
+        <p>
+            A modern digital library platform designed to help
+            students discover books, access learning resources
+            and manage their library activities easily.
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         VISION AND MISSION
+    ========================================== -->
+
+    <section class="vision-mission">
+
+
+        <!-- VISION -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                👁️
+            </div>
+
+            <div class="info-content">
+
+                <h2>
+                    Our Vision
+                </h2>
+
+                <p>
+                    To create a modern, accessible and
+                    student-friendly learning environment where
+                    knowledge and reading inspire creativity,
+                    growth and lifelong learning.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MISSION -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                🎯
+            </div>
+
+            <div class="info-content">
+
+                <h2>
+                    Our Mission
+                </h2>
+
+                <p>
+                    To provide students with easy access to books,
+                    digital resources and a supportive library
+                    environment while encouraging reading, research
+                    and continuous learning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         LOGIN SECTION
+    ========================================== -->
+
+    <section class="container">
+
+        <h2>
+            Login to Continue
+        </h2>
+
+        <p class="subtitle">
+            Select your login type
+        </p>
+
+
+        <!-- LOGIN BUTTONS -->
+
+        <div class="login-buttons">
+
+            <button
+                type="button"
+                onclick="showStudentLogin()"
+            >
+                Student Login
+            </button>
+
+
+            <button
+                type="button"
+                onclick="showAdminLogin()"
+            >
+                Admin Login
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             STUDENT LOGIN
+        ====================================== -->
+
+        <div
+            id="studentLogin"
+            class="login-box hidden"
+        >
+
+            <h2>
+                Student Login
+            </h2>
+
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter Name"
+                autocomplete="name"
+            >
+
+
+            <input
+                type="text"
+                id="rollNumber"
+                placeholder="Enter Roll Number"
+            >
+
+
+            <input
+                type="password"
+                id="studentPassword"
+                placeholder="Enter Password"
+                autocomplete="current-password"
+            >
+
+
+            <button
+                type="button"
+                onclick="studentLogin()"
+            >
+                Login
+            </button>
+
+
+            <p
+                id="studentMessage"
+                class="message"
+            ></p>
+            <div class="register-link">
+
+    <p>New student?</p>
+
+    <button
+        type="button"
+        onclick="window.location.href='register.html'"
+    >
+        Register Now
+    </button>
+
+</div>
+
+        </div>
+        
+
+
+        <!-- =====================================
+             ADMIN LOGIN
+        ====================================== -->
+
+        <div
+            id="adminLogin"
+            class="login-box hidden"
+        >
+
+            <h2>
+                Admin Login
+            </h2>
+
+
+            <input
+                type="text"
+                id="adminUsername"
+                placeholder="Username"
+                autocomplete="username"
+            >
+
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Password"
+                autocomplete="current-password"
+            >
+
+
+            <button
+                type="button"
+                onclick="adminLogin()"
+            >
+                Login
+            </button>
+
+
+            <p
+                id="adminMessage"
+                class="message"
+            ></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CREDITS
+    ========================================== -->
+
+    <section class="credits-section">
+
+        <h2>
+            Credits
+        </h2>
+
+        <p>
+            Library Management System
+        </p>
+
+        <p>
+            Designed and Developed as a Java Full Stack Project
+        </p>
+
+        <p>
+            Developed by
+            <strong>Dhanush M</strong>
+        </p>
+
+        <p>
+            BOTz Digital Library
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 BOTz Digital Library
+        </p>
+
+        <p>
+            Empowering Students Through Knowledge
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

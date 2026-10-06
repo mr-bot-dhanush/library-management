@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Registration - New Prince Digital Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="registration-page">
+
+        <div class="registration-card">
+
+            <div class="registration-header">
+
+                <h1>Student Registration</h1>
+
+                <p>
+                    New Prince Digital Library
+                </p>
+
+                <span>
+                    Create your library account
+                </span>
+
+            </div>
+
+
+            <form id="registrationForm">
+
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Initial -->
+
+                <div class="form-group">
+
+                    <label for="initial">
+                        Initial
+                    </label>
+
+                    <input
+                        type="text"
+                        id="initial"
+                        placeholder="Enter your initial"
+                        maxlength="20"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DOB -->
+
+                <div class="form-group">
+
+                    <label for="dob">
+                        Date of Birth
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dob"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter phone number"
+                        maxlength="10"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Roll Number -->
+
+                <div class="form-group">
+
+                    <label for="rollNumber">
+                        Roll Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter roll number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="registration-button"
+                >
+                    Register
+                </button>
+
+
+                <p
+                    id="registrationMessage"
+                    class="registration-message"
+                ></p>
+
+
+            </form>
+
+
+            <div class="back-login">
+
+                <button
+                    type="button"
+                    onclick="window.location.href='index.html'"
+                >
+                    ← Back to Login
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Admin Dashboard</h1>
+
+        <p>Library Management System</p>
+
+        <div class="dashboard-menu">
+
+            <button onclick="viewBooks()">
+                     View Books
+            </button>
+
+            <button onclick="showAddBook()">
+                    Add Book
+            </button>
+
+            <button onclick="viewIssueHistory()">
+                Issue History
+            </button>
+
+            <button onclick="viewReturnHistory()">
+                Return History
+            </button>
+
+            <button onclick="viewPendingBooks()">
+                Pending Books
+            </button>
+
+            <button onclick="addFine()">
+                Add Fine
+            </button>
+
+            <button onclick="viewFines()">
+                Fine History
+            </button>
+
+            <button onclick="viewDueAmounts()">
+                Student Due Amounts
+            </button>
+
+
+
+    <button
+        onclick="window.location.href='student-approvals.html'"
+    >
+        👨‍🎓 Student Registrations
+    </button>
+
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+        <div id="content">
+
+            <h2>Welcome, Admin</h2>
+
+            <p>
+                Select an option above to manage the library.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

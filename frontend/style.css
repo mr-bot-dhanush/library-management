@@ -1,0 +1,1932 @@
+/* ============================================
+   GENERAL SETTINGS
+============================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6f9;
+
+    color: #333;
+}
+
+
+/* ============================================
+   LIBRARY HEADER
+============================================ */
+
+.library-header {
+
+    width: 200%;
+
+    padding: 18px 6%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #1e40af
+        );
+
+    color: white;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.15);
+
+}
+
+
+.library-brand {
+
+    max-width: 1150px;
+
+    margin: left;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+/* ============================================
+   ROUND LIBRARY LOGO
+============================================ */
+
+.library-logo {
+
+    width: 85px;
+
+    height: 85px;
+
+    min-width:85px;
+
+    border-radius: 50%;
+
+    background: black;
+
+    border: 4px solid white;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.25);
+
+}
+
+
+.library-logo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+    
+
+    display: block;
+
+}
+
+
+/* ============================================
+   LIBRARY NAME
+============================================ */
+
+.brand-text h1 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: white;
+
+}
+
+
+.brand-text p {
+
+    margin: 7px 0 0;
+
+    color: #dbeafe;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ============================================
+   LARGE HEADER IMAGE
+============================================ */
+
+.hero-banner {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #172554;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+
+    height: 200%;
+
+    object-fit: fill;
+
+    object-position: center;
+
+    display: block;
+
+}
+
+
+/* DARK IMAGE OVERLAY */
+
+.hero-banner::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 25, 55, 0.80),
+            rgba(10, 25, 55, 0.35),
+            rgba(10, 25, 55, 0.10)
+        );
+
+}
+
+
+/* ============================================
+   HERO TEXT
+============================================ */
+
+.hero-overlay {
+
+    position: absolute;
+
+    z-index: 2;
+
+    top: 70%;
+
+    left: 50%;
+
+
+    transform:
+        translate(-50%, -50%);
+
+    max-width: 7800px;
+
+    padding: 30px;
+
+    color: rgb(10, 8, 8);
+
+    background:
+        rgba(105, 110, 116, 0.72);
+
+    border-radius: 12px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+.hero-overlay h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 36px;
+
+    line-height: 1.25;
+    text-align: center;
+
+}
+
+
+.hero-overlay p {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #e0e0e0;
+    text-align: center;
+
+}
+
+
+/* ============================================
+   WELCOME SECTION
+============================================ */
+
+.library-intro {
+
+    max-width: 850px;
+
+    margin: 40px auto 25px;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+}
+
+
+.library-intro h2 {
+
+    margin-bottom: 12px;
+
+    color: #172554;
+
+    font-size: 30px;
+
+}
+
+
+.library-intro p {
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ============================================
+   VISION & MISSION
+============================================ */
+
+.vision-mission {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.info-card {
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    border:
+        1px solid #e0e6ef;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.07);
+
+    text-align: center;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+}
+
+
+.info-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 8px 22px
+        rgba(0, 0, 0, 0.12);
+
+}
+
+
+.info-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #1769c2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+}
+
+
+.info-card h2 {
+
+    margin:
+        10px 0 12px;
+
+    color: #1e3a8a;
+
+}
+
+
+.info-card p {
+
+    margin: 0;
+
+    color: #555;
+
+    line-height: 1.7;
+
+}
+
+
+/* ============================================
+   LOGIN CONTAINER
+============================================ */
+
+.container {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+}
+
+
+.container > h2 {
+
+    margin-top: 0;
+
+    color: #222;
+
+}
+
+
+.subtitle {
+
+    color: #666;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ============================================
+   LOGIN BUTTONS
+============================================ */
+
+.login-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.login-buttons button {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #007bff;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.login-buttons button:hover {
+
+    background: #0056b3;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.login-buttons button:nth-child(2) {
+
+    background: #198754;
+
+}
+
+
+.login-buttons button:nth-child(2):hover {
+
+    background: #146c43;
+
+}
+
+
+/* ============================================
+   LOGIN BOX
+============================================ */
+
+.login-box {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fafafa;
+
+}
+
+
+.login-box h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+}
+
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border:
+        1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+
+.login-box input:focus {
+
+    border-color: #007bff;
+
+}
+
+
+.login-box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #007bff;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+.login-box button:hover {
+
+    background: #0056b3;
+
+}
+
+
+.login-box p {
+
+    margin-top: 15px;
+
+    color: #d9534f;
+
+}
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* ============================================
+   CREDITS
+============================================ */
+
+.credits-section {
+
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 35px auto;
+
+    padding: 28px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.credits-section h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+    color: #1e3a8a;
+
+}
+
+
+.credits-section p {
+
+    margin: 8px 0;
+
+    color: #666;
+
+    line-height: 1.6;
+
+}
+
+
+.credits-section strong {
+
+    color: #222;
+
+}
+
+
+/* ============================================
+   FOOTER
+============================================ */
+
+footer {
+
+    margin-top: 40px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+
+}
+
+
+footer p {
+
+    margin: 5px;
+
+}
+
+
+/* ============================================
+   DASHBOARD
+============================================ */
+
+.dashboard {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+
+.dashboard h1 {
+
+    text-align: center;
+
+    margin-top: 0;
+
+    color: #222;
+
+}
+
+
+.dashboard > p {
+
+    text-align: center;
+
+    color: #666;
+
+}
+
+
+.dashboard-menu {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+}
+
+
+.dashboard-menu button {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #007bff;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+
+}
+
+
+.dashboard-menu button:hover {
+
+    background: #0056b3;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+#content {
+
+    margin-top: 20px;
+
+    overflow-x: auto;
+
+    padding-top: 10px;
+
+}
+
+
+#content h2 {
+
+    margin-top: 10px;
+
+    color: #222;
+
+}
+
+
+#content p {
+
+    color: #555;
+
+}
+
+
+#content table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background: white;
+
+}
+
+
+#content th {
+
+    background: #007bff;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+#content th,
+#content td {
+
+    padding: 10px;
+
+    text-align: left;
+
+    border: 1px solid #ddd;
+
+}
+
+
+#content tr:nth-child(even) {
+
+    background: #f8f9fa;
+
+}
+
+
+#content tr:hover {
+
+    background: #f1f5f9;
+
+}
+
+
+#content button {
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #007bff;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+#content button:hover {
+
+    background: #0056b3;
+
+}
+
+
+#content input {
+
+    padding: 10px;
+
+    border:
+        1px solid #ccc;
+
+    border-radius: 5px;
+
+    margin: 5px 0;
+
+    outline: none;
+
+}
+
+
+#content input:focus {
+
+    border-color: #007bff;
+
+}
+
+
+/* ============================================
+   BOOK SEARCH
+============================================ */
+
+.book-search-list {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 10px;
+
+}
+
+
+.book-search-item {
+
+    padding: 12px;
+
+    border:
+        1px solid #ddd;
+
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: #f8f9fa;
+
+    transition: 0.2s;
+
+}
+
+
+.book-search-item:hover {
+
+    background: #e9ecef;
+
+    border-color: #007bff;
+
+}
+
+
+.book-search-item small {
+
+    color: #666;
+
+}
+
+
+/* ============================================
+   STUDENT SEARCH
+============================================ */
+
+.student-search-list {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 10px;
+
+}
+
+
+.student-search-item {
+
+    padding: 12px;
+
+    border:
+        1px solid #ddd;
+
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: #f8f9fa;
+
+    transition: 0.2s;
+
+}
+
+
+.student-search-item:hover {
+
+    background: #e9ecef;
+
+    border-color: #007bff;
+
+}
+
+
+.student-search-item small {
+
+    color: #666;
+
+}
+
+
+/* ============================================
+   DUE AMOUNT
+============================================ */
+
+.due-box {
+
+    width: 300px;
+
+    max-width: 100%;
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    background: #f5f5f5;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.due-box h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.due-box p {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin: 0;
+
+}
+
+
+/* ============================================
+   E-BOOKS
+============================================ */
+
+.ebook-page {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+
+.ebook-page h2 {
+
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    color: #222;
+
+}
+
+
+.ebook-subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+
+}
+
+
+.ebook-table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 20px;
+
+}
+
+
+.ebook-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+}
+
+
+.ebook-table th {
+
+    background: #007bff;
+
+    color: white;
+
+    padding: 13px;
+
+    text-align: left;
+
+    border: 1px solid #ddd;
+
+}
+
+
+.ebook-table td {
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    color: #333;
+
+    vertical-align: middle;
+
+}
+
+
+.ebook-table tbody tr:nth-child(even) {
+
+    background: #f8f9fa;
+
+}
+
+
+.ebook-table tbody tr:hover {
+
+    background: #eef5ff;
+
+}
+
+
+.ebook-table th:first-child,
+.ebook-table td:first-child {
+
+    width: 70px;
+
+    text-align: center;
+
+}
+
+
+.ebook-table th:last-child,
+.ebook-table td:last-child {
+
+    width: 120px;
+
+    text-align: center;
+
+}
+
+
+.ebook-view-button {
+
+    padding: 8px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #007bff;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.ebook-view-button:hover {
+
+    background: #0056b3;
+
+}
+
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN
+============================================ */
+
+@media (max-width: 800px) {
+
+    .library-brand {
+
+        gap: 12px;
+
+    }
+
+
+    .library-logo {
+
+        width: 65px;
+
+        height: 65px;
+
+        min-width: 65px;
+
+        border-width: 3px;
+
+    }
+
+
+    .brand-text h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .brand-text p {
+
+        font-size: 12px;
+
+    }
+
+
+    .hero-banner {
+
+        height: 330px;
+
+    }
+
+
+    .hero-overlay {
+
+        left: 5%;
+
+        right: 5%;
+
+        max-width: none;
+
+        padding: 22px;
+
+    }
+
+
+    .hero-overlay h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .hero-overlay p {
+
+        font-size: 15px;
+
+    }
+
+
+    .vision-mission {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .container {
+
+        width: 92%;
+
+        margin: 40px auto;
+
+        padding: 25px;
+
+    }
+
+
+    .login-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .login-buttons button {
+
+        width: 100%;
+
+    }
+
+
+    .dashboard {
+
+        width: 94%;
+
+        padding: 20px;
+
+        margin: 25px auto;
+
+    }
+
+
+    .dashboard-menu {
+
+        flex-direction: column;
+
+    }
+
+
+    .dashboard-menu button {
+
+        width: 100%;
+
+    }
+
+
+    #content table {
+
+        min-width: 650px;
+
+    }
+
+
+    .ebook-table {
+
+        min-width: 650px;
+
+    }
+
+}
+
+
+/* ============================================
+   SMALL MOBILE
+============================================ */
+
+@media (max-width: 500px) {
+
+    .library-header {
+
+        padding: 15px;
+
+    }
+
+
+    .library-brand {
+
+        gap: 10px;
+
+    }
+
+
+    .library-logo {
+
+        width: 55px;
+
+        height: 55px;
+
+        min-width: 55px;
+
+        border-width: 2px;
+
+    }
+
+
+    .brand-text h1 {
+
+        font-size: 18px;
+
+    }
+
+
+    .brand-text p {
+
+        font-size: 11px;
+
+    }
+
+
+    .hero-banner {
+
+        height: 300px;
+
+    }
+
+
+    .hero-overlay {
+
+        padding: 18px;
+
+    }
+
+
+    .hero-overlay h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .hero-overlay p {
+
+        font-size: 14px;
+
+    }
+
+
+    .library-intro h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .info-card {
+
+        padding: 22px;
+
+    }
+
+
+    .credits-section {
+
+        width: 92%;
+
+        padding: 22px 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   STUDENT REGISTRATION
+   ========================================================= */
+
+.registration-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8fafc
+        );
+}
+
+
+.registration-card {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.registration-header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.registration-header h1 {
+
+    margin-bottom: 8px;
+
+    color: #1e293b;
+}
+
+
+.registration-header p {
+
+    margin: 5px 0;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+.registration-header span {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.form-group {
+
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+.registration-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.registration-button:hover {
+
+    background: #1d4ed8;
+}
+
+
+.registration-message {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #dc2626;
+
+    font-weight: 600;
+}
+
+
+.success-message {
+
+    color: #16a34a !important;
+}
+
+
+.back-login {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.back-login button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.back-login button:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   NEW STUDENT REGISTER LINK
+   ========================================================= */
+
+.register-link {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+.register-link p {
+
+    margin: 0 0 8px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.register-link button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.register-link button:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   STUDENT APPROVAL PAGE
+   ========================================================= */
+
+.approval-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin: 25px 0;
+
+    flex-wrap: wrap;
+}
+
+
+.approval-actions button {
+
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.approval-actions button:hover {
+
+    background: #1d4ed8;
+}
+
+
+.approval-table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.approval-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 950px;
+}
+
+
+.approval-table th {
+
+    background: #1e293b;
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: center;
+}
+
+
+.approval-table td {
+
+    padding: 13px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    text-align: center;
+}
+
+
+.approval-table tr:hover {
+
+    background: #f8fafc;
+}
+
+
+.pending-status {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #fef3c7;
+
+    color: #92400e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.approve-button {
+
+    padding: 8px 12px;
+
+    margin: 3px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #16a34a;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.approve-button:hover {
+
+    background: #15803d;
+}
+
+
+.reject-button {
+
+    padding: 8px 12px;
+
+    margin: 3px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #dc2626;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.reject-button:hover {
+
+    background: #b91c1c;
+}
+
+
+.no-pending-students {
+
+    padding: 50px;
+
+    text-align: center;
+
+    color: #64748b;
+}
+
+
+.no-pending-students h2 {
+
+    color: #334155;
+}
+
+
+.error-box {
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-radius: 8px;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .registration-card {
+
+        padding: 25px 20px;
+    }
+
+
+    .registration-header h1 {
+
+        font-size: 24px;
+    }
+
+
+    .approval-actions {
+
+        flex-direction: column;
+    }
+
+
+    .approval-actions button {
+
+        width: 100%;
+    }
+
+}
