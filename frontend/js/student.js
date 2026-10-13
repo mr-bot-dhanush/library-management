@@ -1238,6 +1238,6 @@ function logout() {
 
     localStorage.removeItem("student");
 
-    window.location.href = "index.html";
+    window.location.href = "/frontend/html/index.html";
 
 }
